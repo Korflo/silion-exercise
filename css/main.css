@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+}
+
+.top-bar {
+  height: 48px;
+  width: 100;
+  background-color: #fef7f6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.contact span:first-child {
+  padding-right: 15px;
+}
+
+.info span {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.container {
+  height: 90.39px;
+  width: 100;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu a {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+.menu a .icon-container {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+.menu a .card-bag-icon {
+  position: relative;
+  padding: 10px;
+}
+.menu a .circle {
+  background-color: rgb(242, 69, 69);
+  color: white;
+  font-size: 8px;
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+.menu a .square {
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  top: -15px;
+  border: 5px solid red;
+  border-radius: 15px;
+}
+.menu a .banner {
+  height: 530 px;
+  width: 100%;
+  background: url("https://demo.themeies.com/silon/images/bg-1.jpg");
+  display: flex;
+  background-size: cover;
+}
+.menu a .banner h2 {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 0.8;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+}
+.menu a .banner h1 {
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 35px;
+}
+.menu a .banner button {
+  background-color: #f15151;
+  border-radius: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 0.8;
+  min-width: 170px;
+  padding: 20px 25px;
+}
+.menu a > div {
+  width: 50%;
+}
+.menu a img {
+  height: auto;
+  width: 100%;
+}
+
+.h2 {
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 35px;
+}
+
+.products1 {
+  position: relative;
+}
+
+.products1 img {
+  display: block;
+}
+
+.products2 {
+  position: relative;
+}
+
+.products2 img {
+  display: block;
+}
+
+.products3 {
+  position: relative;
+}
+
+.products3 img {
+  display: block;
+}
+
+.action-links {
+  bottom: 60px;
+  width: 100%;
+  position: absolute;
+  left: 30%;
+  opacity: 0;
+  z-index: 10;
+  transition: all 300ms ease-in-out;
+}
+
+.action-links:hover {
+  visibility: visible;
+  opacity: 1;
+}
+.action-links:hover .ti-eye {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+}
+.action-links:hover .ti-heart {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+}
+.action-links:hover .ti-search {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  text-align: center;
+}
+
+.list h2 {
+  padding: 20px;
+}
+
+.list button {
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.H1 {
+  height: 123.19px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.H1 span {
+  font-size: 40px;
+}
+
+.feat {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.products1 {
+  width: 30%;
+}
+
+.products2 {
+  width: 30%;
+}
+
+.products3 {
+  width: 30%;
+}
+
+.footer {
+  height: 452px;
+  background-color: #e9e2d8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.us {
+  width: 30%;
+  height: 50px;
+}
+
+.links {
+  width: 30%;
+  height: 50px;
+}
+
+.online {
+  width: 30%;
+  height: 50px;
+}
+
+.experience {
+  width: 30%;
+  height: 50px;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.experience {
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
