@@ -32,36 +32,42 @@
   justify-content: space-around;
 }
 
-.menu a {
-  margin: 0;
-  padding: 0;
-  color: black;
-  text-align: center;
+.shopping span {
+  text-align: right;
+  padding-right: 15px;
+  font-size: 13px;
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
 }
-.menu a .icon-container {
+
+.icon-container {
   font-size: 18px;
   display: flex;
   flex-direction: row;
 }
-.menu a .card-bag-icon {
+
+.card-bag-icon {
   position: relative;
   padding: 10px;
 }
-.menu a .circle {
-  background-color: rgb(242, 69, 69);
-  color: white;
+
+.circle {
+  position: absolute;
+  background-color: #ff5353;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  color: #fff;
   font-size: 8px;
   font-weight: 400;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
   line-height: 16px;
   text-align: center;
 }
-.menu a .square {
+
+.square {
   background-color: red;
   color: white;
   font-size: 10px;
@@ -71,14 +77,15 @@
   border: 5px solid red;
   border-radius: 15px;
 }
-.menu a .banner {
+
+.banner {
   height: 530 px;
   width: 100%;
   background: url("https://demo.themeies.com/silon/images/bg-1.jpg");
   display: flex;
   background-size: cover;
 }
-.menu a .banner h2 {
+.banner h2 {
   display: block;
   margin-bottom: 15px;
   font-weight: 500;
@@ -86,12 +93,12 @@
   letter-spacing: 2.8px;
   text-transform: uppercase;
 }
-.menu a .banner h1 {
+.banner h1 {
   font-size: 40px;
   line-height: 56px;
   margin-bottom: 35px;
 }
-.menu a .banner button {
+.banner botton {
   background-color: #f15151;
   border-radius: 3px;
   color: #fff;
@@ -103,10 +110,12 @@
   min-width: 170px;
   padding: 20px 25px;
 }
-.menu a > div {
+
+> div {
   width: 50%;
 }
-.menu a img {
+
+img {
   height: auto;
   width: 100%;
 }
@@ -172,6 +181,14 @@
   font-size: 14px;
   display: inline-block;
   text-align: center;
+}
+.action-links:hover .ti-heart:before {
+  content: "\e634";
+}
+.action-links:hover *,
+.action-links:hover ::after,
+.action-links:hover ::before {
+  box-sizing: border-box;
 }
 .action-links:hover .ti-search {
   border-radius: 50%;
@@ -262,9 +279,18 @@
 .experience {
   width: 30%;
   height: 50px;
+}
+
+.us li {
   list-style: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+}
+
+.links li {
+  list-style: none;
+}
+
+.online li {
+  list-style: none;
 }
 
 .experience {
