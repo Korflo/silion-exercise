@@ -21,7 +21,9 @@ body {
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
+    font-family:sans-serif;
 }
+
 
 .contact span:first-child {
     padding-right: 15px;
@@ -42,21 +44,21 @@ body {
     align-items: center;
     justify-content: space-around;
 }
-nav.menu{
-    font-family: 'Roboto', sans-serif;
+.menu{
+    font-family:sans-serif;
     font-size: 13px;
     display: flex;
-    gap: 10px;
-   a {
+    gap: 30px;
+    font-weight: 700;
+    flex-direction: row;
+    list-style: none;
+   
+    a {
     color: black;
     text-decoration: none;
 
    }
-li a {
-    padding: 1rem;
 
-   
-}
 
 }
 
@@ -72,28 +74,34 @@ li a {
 }
 .dropdown ul {
     position: absolute;
-    padding: 10px;
     list-style: none;
     text-decoration: none;
-    width: 100px;
+    width: 180px;
     display: none;
+    left: 0;
+    top: 100%;
+    text-align: left;
+   
+   
+
     
+}
+.dropdown ul li a {
+    display:block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 0.8;
+
 }
 
 .dropdown:hover ul {
     display: block;
+    background-color: white;
 }
 
-.dropdown ul li:hover {
-    // background-color: ;
-}
- .li a {
-  padding: 1rem;
-  
-  &:hover{
-  color: #ff5353;
-}
- }
 
 
 .shopping span {
@@ -152,20 +160,25 @@ li a {
     justify-content: center;
     // flex-direction: column;
     background-size: cover;
+    
 
     h2 {
         display: block;
         margin-bottom: 15px;
-        font-weight: 500;
+        font-weight: 550;
         line-height: 0.8;
         letter-spacing: 2.8px;
         text-transform: uppercase;
+        font-size: 14px;
+        color: #565656;
+        
     }
 
     h1 {
-        font-size: 40px;
-        line-height: 56px;
-        margin-bottom: 35px;
+        font-size: 52px;
+        font-weight: 500;
+        line-height: 70px;
+        margin-bottom: 45px;
     }
 
     button {
@@ -179,7 +192,17 @@ li a {
         line-height: 0.8;
         min-width: 170px;
         padding: 20px 25px;
+        border-style: none;
+        
     }
+    button:hover {
+        background-color: white;
+        color:red;
+    }
+}
+.list {
+    max-width: 475px;
+    width: 100%;
 }
 
 // >div {
@@ -300,6 +323,10 @@ img {
 
     }
 }
+.ti-star {
+    
+    color: #ff5353
+}
 
 .list {
     display: flex;
@@ -345,11 +372,26 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap:100px;
 
+}
+.product-info {
+    padding-left: 80px;
+    text-align: center;
+}
+h5 a {
+    text-decoration: none;
+    color:#565656;
+    text-align: center;
+   
+}
+h5 a:hover {
+    color:red;
 }
 
 .products1 {
     width: 30%;
+    
 
 }
 
@@ -370,25 +412,25 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-around;
+  
+    
 }
 
 .us {
-    width: 30%;
     height: 50px;
 }
 
 .links {
-    width: 30%;
     height: 50px;
 }
 
 .online {
-    width: 30%;
+    
     height: 50px;
 }
 
 .experience {
-    width: 30%;
+    
     height: 50px;
 }
 
@@ -406,4 +448,25 @@ img {
 
 .experience {
     cursor: pointer;
+}
+.footer ul li {
+    font-size: 14px;
+    color: #888;
+    line-height: 30px;
+}
+.footer h1{
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.container2 {
+    background-color: #e9e2d8;
+    color: #888;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+.container2 a{
+    color: red;
 }
