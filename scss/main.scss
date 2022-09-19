@@ -2,13 +2,17 @@
 
 * {
     margin: 0;
-   
-}
+   }
+   *{box-sizing: border-box;}
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
-
+.header{
+    display: none;
+}
 .top-bar {
     height: 48px;
     width: 100;
@@ -47,7 +51,7 @@ body {
 .menu{
     font-family:sans-serif;
     font-size: 13px;
-    display: flex;
+    display: none;
     gap: 30px;
     font-weight: 700;
     flex-direction: row;
@@ -153,17 +157,17 @@ body {
 }
 
 .banner {
-    height: 530px;
+    // height: 560px;
     width: 100%;
     background: url('https://demo.themeies.com/silon/images/bg-1.jpg');
     display: flex;
     justify-content: center;
-    // flex-direction: column;
-    background-size: cover;
     
+    background-size: cover;
+    flex-wrap: wrap-reverse;
 
     h2 {
-        display: block;
+        // display: block;
         margin-bottom: 15px;
         font-weight: 550;
         line-height: 0.8;
@@ -179,6 +183,7 @@ body {
         font-weight: 500;
         line-height: 70px;
         margin-bottom: 45px;
+        
     }
 
     button {
@@ -199,6 +204,7 @@ body {
         background-color: white;
         color:red;
     }
+
 }
 .list {
     max-width: 475px;
@@ -206,9 +212,9 @@ body {
 }
 
 img {
-    height: 100%;
-
-}
+    height: auto;
+    width: 100%;
+   }
 
 
 .h2 {
@@ -216,38 +222,17 @@ img {
     line-height: 56px;
     margin-bottom: 35px;
 }
-// .product-name {
-//     color: #888
-//     font-size: 10px;
-//     font-weight: 400px;
-// }
 
-.products1 {
+.products {
     position: relative;
 }
 
-.products1 img {
+.products img {
     display: block;
 
 }
 
-.products2 {
-    position: relative;
-}
 
-.products2 img {
-    display: block;
-
-}
-
-.products3 {
-    position: relative;
-}
-
-.products3 img {
-    display: block;
-
-}
 
 .action-links {
     bottom: 60px;
@@ -255,7 +240,7 @@ img {
     width: 160px;
     // left: 30%;
     bottom: 10px;
-    left: calc(60% - 70px);
+    left: calc(50% - 70px);
     visibility: hidden;
     opacity: 1;
     z-index: 10;
@@ -266,21 +251,14 @@ img {
     }
 }
 
-
-
 .product-image {
     position: relative;
 }
-
-
-
 
 .product > div:hover .action-links {
     visibility: visible;
     opacity: 1;
     color: red;
-
-    
 
     .ti-eye {
         border-radius: 50%;
@@ -358,7 +336,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 0;
+    text-align: center;
 
 }
 
@@ -367,21 +346,23 @@ img {
 }
 
 .feat {
-    max-width: 1000px;
+    
     margin: 0 auto;
     background-color: #fff;
-    display: flex;
+    display :flex;
     align-items: center;
     justify-content: space-around;
-    gap:100px;
+    // gap:100px;
+    flex-wrap: wrap;
+    flex-direction: column;
 
 }
 .product-info {
-    padding-left: 80px;
+    // padding-left: 80px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    justify-content: space-around;
+
 }
 h5 a {
     text-decoration: none;
@@ -393,45 +374,17 @@ h5 a:hover {
     color:red;
 }
 
-.products1 {
-    width: 30%;
-}
-
-.products2 {
-    width: 30%;
-}
-
-.products3 {
-    width: 30%;
-
-}
 
 .footer {
-    height: 300px;
+    // height: 300px;
     background-color: #e9e2d8;
     display: flex;
-    align-items: flex-start;
+    // align-items: flex-start;
     justify-content: space-around;
     padding-top: 70px;
+    padding-bottom: 50px;
+    flex-direction: column;
   
-}
-
-.us {
-    height: 50px;
-}
-
-.links {
-    height: 50px;
-}
-
-.online {
-    
-    height: 50px;
-}
-
-.experience {
-    
-    height: 50px;
 }
 
 .us li {
@@ -459,24 +412,14 @@ h5 a:hover {
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
-.container2 {
-    background-color: #e9e2d8;
-    color: #888;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 0;
+
+.MOBILE {
+    margin: 0%;
+    padding-left: 20px;
 }
-.container2 a{
-    color: red;
-}
-// . {
-//     flex-basis: 49%;
-//     padding: 12px 10px;
-//     border-radius: 5px;
-//     position: relative;
-//     padding-left: 35px;
-// }
+
 .app-btn {
     align-items: center;
     display: flex;
@@ -566,6 +509,48 @@ a.app-store {
   .social-media a:not(:last-child) {
     margin-right: 10px;
 }
+.container2 {
+    background-color: #e9e2d8;
+    color: #888;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.container2 a{
+    color: red;
+}
+.copyright {
+    font-size: 15px;
+}
 
-  
+@media screen and (min-width:768px){
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .banner img{
+        height: 100%;
+        width: auto;
+        display: block;
+    }
+    .banner {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 560px;
+    }
+    .footer {
+        flex-direction: row;
+    }
+    .feat {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }
+    .products {
+       width: 20%;
+    }
+    .header {
+        display: block;
+    }
+}  
   
