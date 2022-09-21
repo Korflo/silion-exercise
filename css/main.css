@@ -154,7 +154,7 @@ body {
 }
 .banner h2 {
   margin-bottom: 15px;
-  font-weight: 550;
+  font-weight: 500;
   line-height: 0.8;
   letter-spacing: 2.8px;
   text-transform: uppercase;
@@ -203,25 +203,43 @@ img {
 
 .products {
   position: relative;
+  flex-basis: 28%;
 }
 
 .products img {
   display: block;
 }
 
+.product-image .actions-links {
+  visibility: hidden;
+}
+.product-image .actions-links .a {
+  display: none;
+}
+.product-image .actions-links .a::before {
+  content: none;
+}
+
+.product-image:hover .actions-links {
+  visibility: visible;
+}
+
 .action-links {
   bottom: 60px;
   position: absolute;
   width: 160px;
-  bottom: 10px;
+  bottom: 80px;
   left: calc(50% - 70px);
-  visibility: hidden;
   opacity: 1;
   z-index: 10;
   transition: all 300ms ease-in-out;
 }
 .action-links a {
   line-height: 50px;
+  display: none;
+}
+.action-links a::before {
+  content: none;
 }
 
 .product-image {
@@ -229,7 +247,6 @@ img {
 }
 
 .product > div:hover .action-links {
-  visibility: visible;
   opacity: 1;
   color: red;
 }
@@ -328,6 +345,8 @@ h5 a {
   text-decoration: none;
   color: #888;
   text-align: center;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 h5 a:hover {
@@ -502,7 +521,36 @@ a.app-store {
   .banner {
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 560px;
+    height: 600px;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .feat {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .products {
+    width: 20%;
+  }
+  .header {
+    display: block;
+  }
+}
+@media screen and (min-width: 576px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .banner img {
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+  .banner {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 360px;
   }
   .footer {
     flex-direction: row;
