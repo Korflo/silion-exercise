@@ -1,78 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 @import "./header.scss";
 @import "./banner.scss";
 @import "./Popular\ Product.scss";
 @import "./footer.scss";
-
+@import "./media.scss";
 * {
-    margin: 0;
-   }
-   *{box-sizing: border-box;}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
 }
 
-@media screen and (min-width:768px){
-    .menu {
-        display: flex;
-        flex-direction: row;
-    }
-    .banner img{
-        height: 100%;
-        width: auto;
-        display: block;
-    }
-    .banner {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        height: 600px;
-    }
-    .footer {
-        flex-direction: row;
-    }
-    .feat {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        
-    }
-    .products {
-       width: 20%;
-    }
-    .header {
-        display: block;
-    }
-}  
-@media screen and (min-width:576px){
-    .menu {
-        display: flex;
-        flex-direction: row;
-    }
-    .banner img{
-        height: 100%;
-        width: auto;
-        display: block;
-    }
-    .banner {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        height: 480px;
-    }
-    .footer {
-        flex-direction: row;
-    }
-    .feat {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        
-    }
-    .products {
-       width: 20%;
-    }
-    .header {
-        display: block;
-    }
-}  
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}

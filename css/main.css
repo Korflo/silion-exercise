@@ -325,6 +325,10 @@ h5 a:hover {
   color: red;
 }
 
+.action-links a:hover {
+  background-color: red;
+}
+
 .footer {
   background-color: #e9e2d8;
   display: flex;
@@ -333,35 +337,27 @@ h5 a:hover {
   padding-bottom: 50px;
   flex-direction: column;
 }
-
-.us li {
-  list-style: none;
-}
-
-.links li {
-  list-style: none;
-}
-
-.online li {
-  list-style: none;
-}
-
-.experience {
-  cursor: pointer;
-}
-
 .footer ul li {
   font-size: 14px;
   color: #888;
   line-height: 30px;
 }
-
 .footer h1 {
   color: #000;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   padding-bottom: 20px;
+}
+
+.us li,
+.links li,
+.online li {
+  list-style: none;
+}
+
+.experience {
+  cursor: pointer;
 }
 
 .MOBILE {
@@ -391,7 +387,6 @@ h5 a:hover {
   display: flex;
   max-width: 60%;
 }
-
 .social-media a {
   display: inline-block;
   font-size: 14px;
@@ -436,19 +431,21 @@ a.app-store {
   margin-bottom: 5px;
 }
 
-.app-btn a:hover, .app-btn a.app-store {
+.app-btn a:hover,
+.app-btn a.app-store {
   background-color: #ff5353;
 }
 
-.app-btn a:hover p, .app-btn a:hover span, .app-btn a:hover i, .app-btn a.app-store p, .app-btn a.app-store span, .app-btn a.app-store i {
+.app-btn a:hover p,
+.app-btn a:hover span,
+.app-btn a:hover i,
+.app-btn a.app-store p,
+.app-btn a.app-store span,
+.app-btn a.app-store i {
   color: #fff;
 }
 
 .footer .widget .widget-title {
-  margin-bottom: 25px;
-}
-
-.footer .widget .widget-social {
   margin-bottom: 25px;
 }
 
@@ -475,28 +472,10 @@ a.app-store {
   padding: 10px;
   text-align: center;
   margin-bottom: 0;
-}
-
-.copyright a {
-  color: red;
-}
-
-.copyright {
   font-size: 15px;
 }
-
-* {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0px;
-  padding: 0px;
+.copyright a {
+  color: red;
 }
 
 @media screen and (min-width: 768px) {
@@ -541,7 +520,7 @@ body {
   .banner {
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 480px;
+    height: 560px;
   }
   .footer {
     flex-direction: row;
@@ -556,5 +535,18 @@ body {
   .header {
     display: block;
   }
+}
+* {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 /*# sourceMappingURL=main.css.map */
