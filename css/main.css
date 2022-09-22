@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-* {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0px;
-  padding: 0px;
-}
-
-.header {
-  display: none;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 .top-bar {
   height: 48px;
   width: 100;
@@ -26,9 +9,6 @@ body {
   justify-content: space-around;
   font-size: 11px;
   font-weight: 300;
-  text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
   font-family: sans-serif;
 }
 
@@ -63,7 +43,6 @@ body {
   color: black;
   text-decoration: none;
 }
-
 .menu a:hover {
   color: #ff5353;
 }
@@ -168,9 +147,8 @@ body {
   margin-bottom: 45px;
 }
 .banner button {
-  background-color: #ff5353;
   border-radius: 3px;
-  color: #fff;
+  color: red;
   text-transform: uppercase;
   display: inline-block;
   font-size: 14px;
@@ -182,12 +160,18 @@ body {
 }
 .banner button:hover {
   background-color: white;
-  color: red;
+  color: #007bff;
 }
 
 .list {
   max-width: 475px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  text-align: center;
 }
 
 img {
@@ -201,114 +185,16 @@ img {
   margin-bottom: 35px;
 }
 
-.products {
-  position: relative;
-  flex-basis: 28%;
-}
-
-.products img {
-  display: block;
-}
-
-.product-image .actions-links {
-  visibility: hidden;
-}
-.product-image .actions-links .a {
-  display: none;
-}
-.product-image .actions-links .a::before {
-  content: none;
-}
-
-.product-image:hover .actions-links {
-  visibility: visible;
-}
-
-.action-links {
-  bottom: 60px;
-  position: absolute;
-  width: 160px;
-  bottom: 80px;
-  left: calc(50% - 70px);
-  opacity: 1;
-  z-index: 10;
-  transition: all 300ms ease-in-out;
-}
-.action-links a {
-  line-height: 50px;
-  display: none;
-}
-.action-links a::before {
-  content: none;
-}
-
-.product-image {
-  position: relative;
-}
-
-.product > div:hover .action-links {
-  opacity: 1;
-  color: red;
-}
-.product > div:hover .action-links .ti-eye {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background: white;
-  font-size: 14px;
-  display: inline-block;
-  text-align: center;
-}
-.product > div:hover .action-links .ti-heart {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background: white;
-  font-size: 14px;
-  display: inline-block;
-  text-align: center;
-}
-.product > div:hover .action-links .ti-heart:before {
-  content: "\e634";
-}
-.product > div:hover .action-links *,
-.product > div:hover .action-links ::after,
-.product > div:hover .action-links ::before {
-  box-sizing: border-box;
-}
-.product > div:hover .action-links .ti-search {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background: white;
-  font-size: 14px;
-  display: inline-block;
-  text-align: center;
-}
-
-.ti-star {
-  color: #ff5353;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-end;
-  text-align: center;
-}
-
 .list h2 {
   padding: 20px;
 }
 
 .list button {
-  background-color: rgb(224, 105, 105);
+  background-color: #ff5353;
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
-  width: 200px;
+  width: auto;
 }
 
 .H1 {
@@ -323,6 +209,92 @@ img {
 
 .H1 span {
   font-size: 40px;
+}
+
+.products {
+  position: relative;
+  flex-basis: 28%;
+}
+.products img {
+  display: block;
+}
+.products .product-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.products .product-image .action-links {
+  position: absolute;
+  width: 160px;
+  bottom: -50px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s ease-in-out, opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+.products .product-image .action-links .ti-eye,
+.products .product-image .action-links .ti-heart,
+.products .product-image .action-links .ti-search {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  font-size: 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .product-image.product-image:hover .action-links {
+  opacity: 1;
+  bottom: 60px;
+  visibility: visible;
+  transition: visibility 0s ease-in-out, opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+.products {
+  position: relative;
+  flex-basis: 28%;
+}
+.products img {
+  display: block;
+}
+.products .product-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.products .product-image .action-links {
+  position: absolute;
+  width: 160px;
+  bottom: -50px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s ease-in-out, opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+.products .product-image .action-links .ti-eye,
+.products .product-image .action-links .ti-heart,
+.products .product-image .action-links .ti-search {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  font-size: 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.products .product-image.product-image:hover .action-links {
+  opacity: 1;
+  bottom: 60px;
+  visibility: visible;
+  transition: visibility 0s ease-in-out, opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
+}
+
+.ti-star {
+  color: #ff5353;
 }
 
 .feat {
@@ -405,6 +377,11 @@ h5 a:hover {
   justify-content: space-around;
   margin-bottom: 20px;
   padding-bottom: 30px;
+}
+
+.social-media a:hover {
+  background-color: #ff5353;
+  color: white;
 }
 
 .social-media {
@@ -492,20 +469,34 @@ a.app-store {
   margin-right: 10px;
 }
 
-.container2 {
+.copyright {
   background-color: #e9e2d8;
   color: #888;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   margin-bottom: 0;
 }
 
-.container2 a {
+.copyright a {
   color: red;
 }
 
 .copyright {
   font-size: 15px;
+}
+
+* {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 @media screen and (min-width: 768px) {
@@ -550,7 +541,7 @@ a.app-store {
   .banner {
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 360px;
+    height: 480px;
   }
   .footer {
     flex-direction: row;
