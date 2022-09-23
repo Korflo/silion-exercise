@@ -10,13 +10,13 @@
   font-family: sans-serif;
 }
 .contact span:first-child {
-  padding-right: 15px;
+  padding-left: 10px;
 }
 
-.info span {
-  text-align: right;
-  padding-right: 15px;
-}
+// .info span {
+//   text-align: center;
+//   padding-right: 60px;
+// }
 
 .container {
   height: 90.39px;
@@ -115,4 +115,8 @@
   top: -15px;
   border: 5px solid red;
   border-radius: 15px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
 }

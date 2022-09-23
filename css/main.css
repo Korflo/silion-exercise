@@ -13,12 +13,7 @@
 }
 
 .contact span:first-child {
-  padding-right: 15px;
-}
-
-.info span {
-  text-align: right;
-  padding-right: 15px;
+  padding-left: 10px;
 }
 
 .container {
@@ -123,11 +118,16 @@
   border-radius: 15px;
 }
 
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
 .banner {
   width: 100%;
   background: url("https://demo.themeies.com/silon/images/bg-1.jpg");
   display: flex;
-  justify-content: center;
+  justify-content: right;
   background-size: cover;
   flex-wrap: wrap-reverse;
 }
@@ -170,7 +170,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: flex-end;
+  align-content: space-around;
   text-align: center;
 }
 
@@ -213,7 +213,7 @@ img {
 
 .products {
   position: relative;
-  flex-basis: 28%;
+  flex-basis: 58%;
 }
 .products img {
   display: block;
@@ -478,35 +478,6 @@ a.app-store {
   color: red;
 }
 
-@media screen and (min-width: 768px) {
-  .menu {
-    display: flex;
-    flex-direction: row;
-  }
-  .banner img {
-    height: 100%;
-    width: auto;
-    display: block;
-  }
-  .banner {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 600px;
-  }
-  .footer {
-    flex-direction: row;
-  }
-  .feat {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .products {
-    width: 20%;
-  }
-  .header {
-    display: block;
-  }
-}
 @media screen and (min-width: 576px) {
   .menu {
     display: flex;
@@ -534,6 +505,75 @@ a.app-store {
   }
   .header {
     display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .banner img {
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+  .banner {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 548px;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .feat {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .products {
+    width: 20%;
+  }
+  .header {
+    display: block;
+  }
+}
+@media screen and (min-width: 991px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .list {
+    height: 100%;
+    width: 90%;
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+  .banner img {
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+  .banner {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 528px;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .feat {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .products {
+    width: 15%;
+    flex-basis: 50%;
+  }
+  .header {
+    display: block;
+  }
+  .products img {
+    width: auto;
   }
 }
 * {
